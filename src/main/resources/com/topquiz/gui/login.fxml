@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="440.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.topquiz.gui.controller.LoginController">
+   <children>
+      <BorderPane prefHeight="440.0" prefWidth="720.0" style="-fx-background-color: navy;">
+         <top>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="719.0" text="LOGIN" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="205.0" style="-fx-border-color: grey;" vgap="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginAsAdmin" prefHeight="75.0" prefWidth="239.0" style="-fx-background-color: #3859AC; -fx-background-radius: 32px;" text="Login as an administrator" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginAsUser" prefHeight="75.0" prefWidth="239.0" style="-fx-background-color: #3859AC; -fx-background-radius: 32px;" text="Login as a user" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </FlowPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

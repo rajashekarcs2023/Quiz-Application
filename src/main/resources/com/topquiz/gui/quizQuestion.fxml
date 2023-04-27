@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.topquiz.gui.controller.QuizQuestionController">
+   <children>
+      <BorderPane fx:id="mainBorderPane" prefHeight="440.0" prefWidth="720.0" style="-fx-background-color: navy;">
+         <bottom>
+            <FlowPane columnHalignment="CENTER" prefHeight="82.0" prefWidth="720.0" style="-fx-border-color: grey;" vgap="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nextQuestion" prefHeight="75.0" prefWidth="161.0" style="-fx-background-color: #3859AC; -fx-background-radius: 32px;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </FlowPane>
+         </bottom>
+         <top>
+            <FlowPane prefHeight="57.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="124.0" style="-fx-background-color: black;" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="topicNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="569.0" text="Topic name:" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
